@@ -2,6 +2,18 @@ import Stories from "./Stories";
 import Posts from "./Posts";
 import Sugestoes from "./Sugestoes";
 
+function Usuario (props){
+  return(
+    <div class="usuario">
+            <img src={props.img} />
+            <div class="texto">
+              <strong>{props.usuario}</strong>
+              {props.nome}
+            </div>
+          </div>
+  );
+}
+
 export default function Corpo(){
     return(
     <div class="corpo">
@@ -11,16 +23,14 @@ export default function Corpo(){
         </div>
 
         <div class="sidebar">
-          <div class="usuario">
-            <img src="assets/img/catanacomics.svg" />
-            <div class="texto">
-              <strong>catanacomics</strong>
-              Catana
-            </div>
-          </div>
-           <Sugestoes /> 
+          <Usuario 
+          img="assets/img/catanacomics.svg"
+          usuario="catanacomics"
+          nome="Catana"
+          />
           
-
+          <Sugestoes /> 
+          
           <div class="links">
             Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
           </div>
