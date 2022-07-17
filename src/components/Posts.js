@@ -29,9 +29,9 @@ export default function Posts(){
             <div class="acoes">
               <div>
                 <ion-icon name={name} color={like} onClick={() => {
-                setLike("red");
+                setLike("danger");
                 setName("heart")
-                if(like === "red" && name === "heart")
+                if(like === "danger" && name === "heart")
                 {setLike("black");
                   setName("heart-outline")}
                 }}></ion-icon>
