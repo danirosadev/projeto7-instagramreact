@@ -306,9 +306,18 @@ body {
   cursor: pointer;
 }
 
+.black{
+  color: black;
+}
+
+.red{
+  color: red;
+}
+
 .logo-mobile, .instagram-mobile {
   display: none !important;
 }
+
 
 @media (max-width: 935px) {
   .sidebar {
